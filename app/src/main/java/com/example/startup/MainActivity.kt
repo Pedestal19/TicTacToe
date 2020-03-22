@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    protected fun buClick(view: View){
+    fun buClick(view: View){
         val buttonSelected:Button = view as Button
         var cellID = 0;
 
