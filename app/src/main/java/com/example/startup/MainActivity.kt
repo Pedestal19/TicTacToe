@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             ActivePlayer==2
         }
         else{
-            buSelected.text="X"
+            buSelected.text="O"
             buSelected.setBackgroundColor(Color.BLUE)
             playerTwo.add(cellID)
             ActivePlayer==1
