@@ -112,5 +112,13 @@ class MainActivity : AppCompatActivity() {
         if(playerTwo.contains(3) && playerTwo.contains(6) && playerTwo.contains(9)){
             winner=1;
         }
+
+
+        if (winner != -1){
+            Toast.makeText(this, "player 1 wins", Toast.LENGTH_SHORT).show()
+        }
+        else{
+            Toast.makeText(this, "player 2 wins", Toast.LENGTH_SHORT).show()
+        }
     }
 }
