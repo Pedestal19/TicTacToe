@@ -49,13 +49,13 @@ class MainActivity : AppCompatActivity() {
             buSelected.text="X"
             buSelected.setBackgroundColor(Color.GREEN)
             playerOne.add(cellID)
-            ActivePlayer==2
+            ActivePlayer=2
         }
         else{
             buSelected.text="O"
             buSelected.setBackgroundColor(Color.BLUE)
             playerTwo.add(cellID)
-            ActivePlayer==1
+            ActivePlayer=1
         }
         buSelected.isEnabled=false
     }
