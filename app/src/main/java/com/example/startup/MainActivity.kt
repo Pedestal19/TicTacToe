@@ -34,5 +34,15 @@ class MainActivity : AppCompatActivity() {
 
         Toast.makeText(applicationContext, "ID is $cellID", Toast.LENGTH_SHORT).show()
 
+        PlayGame(cellID, buttonSelected)
+
+    }
+
+    var PlayerOne = ArrayList<Int>()
+    var PlayerTwo = ArrayList<Int>()
+    var ActivePlayer = 1;
+
+    fun PlayGame(cellID:Int, buSelected:Button){
+        buSelected.isEnabled=false
     }
 }
