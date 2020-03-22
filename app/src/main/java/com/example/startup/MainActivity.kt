@@ -58,6 +58,7 @@ class MainActivity : AppCompatActivity() {
             ActivePlayer=1
         }
         buSelected.isEnabled=false
+        checkWinner()
     }
 
     fun checkWinner(){
