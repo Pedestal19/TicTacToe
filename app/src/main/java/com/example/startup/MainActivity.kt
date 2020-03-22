@@ -1,5 +1,6 @@
 package com.example.startup
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -38,11 +39,21 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    var PlayerOne = ArrayList<Int>()
-    var PlayerTwo = ArrayList<Int>()
+    var playerOne = ArrayList<Int>()
+    var playerTwo = ArrayList<Int>()
     var ActivePlayer = 1;
 
     fun PlayGame(cellID:Int, buSelected:Button){
+
+        if(ActivePlayer==1){
+            buSelected.text="X"
+            buSelected.setBackgroundColor(Color.GREEN)
+            playerOne.add(cellID)
+            ActivePlayer==2
+        }
+        else{
+
+        }
         buSelected.isEnabled=false
     }
 }
