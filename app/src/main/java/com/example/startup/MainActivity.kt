@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        Toast.makeText(applicationContext, "ID is $cellID", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(applicationContext, "ID is $cellID", Toast.LENGTH_SHORT).show()
 
         PlayGame(cellID, buttonSelected)
 
