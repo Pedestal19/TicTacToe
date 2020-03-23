@@ -124,4 +124,17 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    fun AutoPlay(){
+
+        var emptyCells = ArrayList<Int>()
+
+        for(cellID in 1..9){
+
+            if(!(playerOne.contains(cellID) || playerTwo.contains(cellID))){
+                emptyCells.add(cellID)
+            }
+
+        }
+    }
 }
