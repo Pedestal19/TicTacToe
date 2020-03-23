@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
             winner=1;
         }
         if(playerTwo.contains(1) && playerTwo.contains(2) && playerTwo.contains(3)){
-            winner=1;
+            winner=2;
         }
 
         //row 2
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
             winner=1;
         }
         if(playerTwo.contains(4) && playerTwo.contains(5) && playerTwo.contains(6)){
-            winner=1;
+            winner=2;
         }
 
         //row 3
@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
             winner=1;
         }
         if(playerTwo.contains(7) && playerTwo.contains(8) && playerTwo.contains(9)){
-            winner=1;
+            winner=2;
         }
 
 
@@ -95,7 +95,7 @@ class MainActivity : AppCompatActivity() {
             winner=1;
         }
         if(playerTwo.contains(1) && playerTwo.contains(4) && playerTwo.contains(7)){
-            winner=1;
+            winner=2;
         }
 
         //col 2
@@ -103,7 +103,7 @@ class MainActivity : AppCompatActivity() {
             winner=1;
         }
         if(playerTwo.contains(2) && playerTwo.contains(5) && playerTwo.contains(8)){
-            winner=1;
+            winner=2;
         }
 
         //col 3
@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity() {
             winner=1;
         }
         if(playerTwo.contains(3) && playerTwo.contains(6) && playerTwo.contains(9)){
-            winner=1;
+            winner=2;
         }
 
 
