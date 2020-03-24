@@ -3,6 +3,7 @@ package com.example.startup
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
@@ -49,14 +50,14 @@ class MainActivity : AppCompatActivity() {
 
         if(ActivePlayer==1){
             buSelected.text="X"
-            buSelected.setBackgroundColor(Color.GREEN)
+            buSelected.setBackgroundResource(R.color.blue)
             playerOne.add(cellID)
             ActivePlayer=2
             AutoPlay()
         }
         else{
             buSelected.text="O"
-            buSelected.setBackgroundColor(Color.BLUE)
+            buSelected.setBackgroundResource(R.color.darkgreen)
             playerTwo.add(cellID)
             ActivePlayer=1
         }
@@ -141,9 +142,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         var r = Random()
+        println("empty cells size is "+emptyCells.size)
         val randIndex=r.nextInt(emptyCells.size-0)+0
+        println("random index is $randIndex")
 
         val cellID = emptyCells[randIndex]
+        println("cell id  is $cellID")
+
         var buSelect:Button?
 
         when(cellID){
